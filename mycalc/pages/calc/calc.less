@@ -1,0 +1,75 @@
+/* pages/calc/calc.wxss */
+
+/* 页面 */
+page {
+  /* 弹性布局 */
+  display: flex;
+  /* 排列方向 */
+  flex-direction: column;
+  /* 高度 */
+  height: 100%;
+}
+
+/* 屏幕 */
+.screen {
+  /* 缩放比 */
+  flex: 1;
+  /* 字体加粗 */
+  font-weight: bold;
+  /* 字体大小 */
+  font-size: 60px;
+  /* 文本对齐 */
+  text-align: right;
+}
+
+/* 按钮组 */
+.btnGroup {
+  /* 缩放比 */
+  flex: 3;
+  /* 弹性布局 */
+  display: flex;
+  /* 排列方向 */
+  flex-direction: row;
+  /* 换行 */
+  flex-wrap: wrap;
+}
+
+/* 按钮项 */
+.item {
+  /* 宽度 */
+  width: 25%;
+  /* 盒子尺寸调整 */
+  box-sizing: border-box;
+  /* 上边框 */
+  border-top: 1rpx solid white;
+  /* 右边框 */
+  border-right: 1rpx solid white;
+  /* 弹性布局 */
+  display: flex;
+  /* 子项目主轴对象方式 */
+  justify-content: center;
+  /* 子项目交叉轴对齐方式 */
+  align-items: center;
+}
+
+/* 按钮项激活 */
+.item:active {
+  background-color: #f00;
+}
+
+.orange {
+  color: #fef4e9;
+  background: #1f160c;
+  font-weight: bold;
+}
+
+.blue {
+  color: #d9eef7;
+  background-color: #187920;
+}
+
+#equal {
+  color: black;
+  background-color: blueviolet;
+  /* flex-basis: 50%; */
+}

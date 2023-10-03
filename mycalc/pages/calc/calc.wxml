@@ -1,0 +1,10 @@
+<!-- pages/calc/calc.wxml -->
+<view class="screen">
+  <view> {{operand}}</view>
+  <view> {{operator}}</view>
+</view>
+<view class="btnGroup">
+  <view class="item {{item.type==='number'? 'blue' : 'orange'}}" wx:key="unique" wx:for="{{items}}" wx:for-item="item" id="{{item.id}}" data-value="{{item.value}}" bindtap="tap{{item.type}}">
+    {{item.value}}
+  </view>
+</view>
